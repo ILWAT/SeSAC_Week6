@@ -13,6 +13,13 @@
 		DEC8A61A2A930A3800CBA833 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEC8A6182A930A3800CBA833 /* Main.storyboard */; };
 		DEC8A61C2A930A3A00CBA833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEC8A61B2A930A3A00CBA833 /* Assets.xcassets */; };
 		DEC8A61F2A930A3A00CBA833 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEC8A61D2A930A3A00CBA833 /* LaunchScreen.storyboard */; };
+		DEC8A62A2A94461500CBA833 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DEC8A6292A94461500CBA833 /* SnapKit */; };
+		DEC8A62C2A94465700CBA833 /* SnapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC8A62B2A94465700CBA833 /* SnapKitViewController.swift */; };
+		DEC8A62F2A945CDA00CBA833 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC8A62E2A945CDA00CBA833 /* TextViewController.swift */; };
+		DEC8A6312A94793200CBA833 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC8A6302A94793200CBA833 /* LocationViewController.swift */; };
+		DEC8A6342A949A6000CBA833 /* TextInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC8A6332A949A6000CBA833 /* TextInputViewController.swift */; };
+		DEC8A6362A94A25600CBA833 /* KaKaoTalkProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC8A6352A94A25600CBA833 /* KaKaoTalkProfileViewController.swift */; };
+		DEC8A6382A94A27900CBA833 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC8A6372A94A27900CBA833 /* UIView+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,12 @@
 		DEC8A61B2A930A3A00CBA833 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEC8A61E2A930A3A00CBA833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEC8A6202A930A3A00CBA833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEC8A62B2A94465700CBA833 /* SnapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitViewController.swift; sourceTree = "<group>"; };
+		DEC8A62E2A945CDA00CBA833 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		DEC8A6302A94793200CBA833 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		DEC8A6332A949A6000CBA833 /* TextInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputViewController.swift; sourceTree = "<group>"; };
+		DEC8A6352A94A25600CBA833 /* KaKaoTalkProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaKaoTalkProfileViewController.swift; sourceTree = "<group>"; };
+		DEC8A6372A94A27900CBA833 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEC8A62A2A94461500CBA833 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +70,8 @@
 		DEC8A6112A930A3800CBA833 /* SeSACWeek6 */ = {
 			isa = PBXGroup;
 			children = (
+				DEC8A6322A949A3F00CBA833 /* Assignment */,
+				DEC8A62D2A94465C00CBA833 /* Test */,
 				DEC8A6122A930A3800CBA833 /* AppDelegate.swift */,
 				DEC8A6142A930A3800CBA833 /* SceneDelegate.swift */,
 				DEC8A6162A930A3800CBA833 /* ViewController.swift */,
@@ -65,6 +81,26 @@
 				DEC8A6202A930A3A00CBA833 /* Info.plist */,
 			);
 			path = SeSACWeek6;
+			sourceTree = "<group>";
+		};
+		DEC8A62D2A94465C00CBA833 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				DEC8A62B2A94465700CBA833 /* SnapKitViewController.swift */,
+				DEC8A62E2A945CDA00CBA833 /* TextViewController.swift */,
+				DEC8A6302A94793200CBA833 /* LocationViewController.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		DEC8A6322A949A3F00CBA833 /* Assignment */ = {
+			isa = PBXGroup;
+			children = (
+				DEC8A6332A949A6000CBA833 /* TextInputViewController.swift */,
+				DEC8A6352A94A25600CBA833 /* KaKaoTalkProfileViewController.swift */,
+				DEC8A6372A94A27900CBA833 /* UIView+.swift */,
+			);
+			path = Assignment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +119,9 @@
 			dependencies = (
 			);
 			name = SeSACWeek6;
+			packageProductDependencies = (
+				DEC8A6292A94461500CBA833 /* SnapKit */,
+			);
 			productName = SeSACWeek6;
 			productReference = DEC8A60F2A930A3800CBA833 /* SeSACWeek6.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +150,9 @@
 				Base,
 			);
 			mainGroup = DEC8A6062A930A3800CBA833;
+			packageReferences = (
+				DEC8A6282A94461500CBA833 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = DEC8A6102A930A3800CBA833 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +180,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEC8A62F2A945CDA00CBA833 /* TextViewController.swift in Sources */,
 				DEC8A6172A930A3800CBA833 /* ViewController.swift in Sources */,
+				DEC8A6362A94A25600CBA833 /* KaKaoTalkProfileViewController.swift in Sources */,
 				DEC8A6132A930A3800CBA833 /* AppDelegate.swift in Sources */,
+				DEC8A6312A94793200CBA833 /* LocationViewController.swift in Sources */,
+				DEC8A6382A94A27900CBA833 /* UIView+.swift in Sources */,
+				DEC8A6342A949A6000CBA833 /* TextInputViewController.swift in Sources */,
 				DEC8A6152A930A3800CBA833 /* SceneDelegate.swift in Sources */,
+				DEC8A62C2A94465700CBA833 /* SnapKitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +406,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DEC8A6282A94461500CBA833 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DEC8A6292A94461500CBA833 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEC8A6282A94461500CBA833 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DEC8A6072A930A3800CBA833 /* Project object */;
 }
