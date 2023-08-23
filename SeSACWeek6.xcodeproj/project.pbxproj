@@ -20,6 +20,8 @@
 		DEC8A6342A949A6000CBA833 /* TextInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC8A6332A949A6000CBA833 /* TextInputViewController.swift */; };
 		DEC8A6362A94A25600CBA833 /* KaKaoTalkProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC8A6352A94A25600CBA833 /* KaKaoTalkProfileViewController.swift */; };
 		DEC8A6382A94A27900CBA833 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC8A6372A94A27900CBA833 /* UIView+.swift */; };
+		DEF24E6A2A961A6400675DC7 /* sampleCode_map.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF24E692A961A6400675DC7 /* sampleCode_map.swift */; };
+		DEF24E6D2A961F5C00675DC7 /* TheaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF24E6C2A961F5C00675DC7 /* TheaterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		DEC8A6332A949A6000CBA833 /* TextInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputViewController.swift; sourceTree = "<group>"; };
 		DEC8A6352A94A25600CBA833 /* KaKaoTalkProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaKaoTalkProfileViewController.swift; sourceTree = "<group>"; };
 		DEC8A6372A94A27900CBA833 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		DEF24E692A961A6400675DC7 /* sampleCode_map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sampleCode_map.swift; sourceTree = "<group>"; };
+		DEF24E6C2A961F5C00675DC7 /* TheaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheaterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,11 +100,21 @@
 		DEC8A6322A949A3F00CBA833 /* Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				DEF24E6B2A961A6900675DC7 /* Data */,
 				DEC8A6332A949A6000CBA833 /* TextInputViewController.swift */,
 				DEC8A6352A94A25600CBA833 /* KaKaoTalkProfileViewController.swift */,
 				DEC8A6372A94A27900CBA833 /* UIView+.swift */,
+				DEF24E6C2A961F5C00675DC7 /* TheaterViewController.swift */,
 			);
 			path = Assignment;
+			sourceTree = "<group>";
+		};
+		DEF24E6B2A961A6900675DC7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DEF24E692A961A6400675DC7 /* sampleCode_map.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,12 +195,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEC8A62F2A945CDA00CBA833 /* TextViewController.swift in Sources */,
+				DEF24E6D2A961F5C00675DC7 /* TheaterViewController.swift in Sources */,
 				DEC8A6172A930A3800CBA833 /* ViewController.swift in Sources */,
 				DEC8A6362A94A25600CBA833 /* KaKaoTalkProfileViewController.swift in Sources */,
 				DEC8A6132A930A3800CBA833 /* AppDelegate.swift in Sources */,
 				DEC8A6312A94793200CBA833 /* LocationViewController.swift in Sources */,
 				DEC8A6382A94A27900CBA833 /* UIView+.swift in Sources */,
 				DEC8A6342A949A6000CBA833 /* TextInputViewController.swift in Sources */,
+				DEF24E6A2A961A6400675DC7 /* sampleCode_map.swift in Sources */,
 				DEC8A6152A930A3800CBA833 /* SceneDelegate.swift in Sources */,
 				DEC8A62C2A94465700CBA833 /* SnapKitViewController.swift in Sources */,
 			);

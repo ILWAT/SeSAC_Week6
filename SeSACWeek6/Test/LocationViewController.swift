@@ -68,7 +68,7 @@ class LocationViewController: UIViewController {
         
         
         //지도에 어노테이션(지도에 표시하는 핀) 추가
-        let annotation = MKPointAnnotation() //애플이 기본적으로 만들어 놓은 포인으
+        let annotation = MKPointAnnotation() //애플이 기본적으로 만들어 놓은 포인트(핀)
         annotation.coordinate = center
         annotation.title = "SeSAC 영등포 캠퍼스"
         
@@ -96,7 +96,7 @@ class LocationViewController: UIViewController {
         present(alert, animated: true)
         
     }
-    
+
     func checkDeviceLocationAuthorization() {
         print(#function)
         //iOS 위치 서비스 활성화 체크
@@ -118,24 +118,6 @@ class LocationViewController: UIViewController {
             }
         }
         
-    }
-    
-    func setAnnotation(type: Int){
-        //37.517857, 126.886714 : 컴포즈
-        //37.517746, 126.887131 : 오늘의 밥상
-        
-        let annotation1 = MKPointAnnotation()
-        annotation1.coordinate = CLLocationCoordinate2D(latitude: 37.517857, longitude: 126.886714)
-        
-        let annotation2 = MKPointAnnotation()
-        annotation2.coordinate = CLLocationCoordinate2D(latitude: 37.517746, longitude: 126.887131)
-        
-        if type == 0 { //viewDidLoad
-            mapView.addAnnotations([annotation1, annotation2])
-        } else if type == 1 {
-            mapView.removeAnnotations(mapView.annotations)
-            mapView.addAnnotations([annotation2])
-        }
     }
     
     func checkCurrentLocationAuthorization(status: CLAuthorizationStatus) {
@@ -161,6 +143,26 @@ class LocationViewController: UIViewController {
         @unknown default : print("default") //위치 권한 종류가 더 생길 가능성 대비
         }
     }
+    
+    func setAnnotation(type: Int){
+        //37.517857, 126.886714 : 컴포즈
+        //37.517746, 126.887131 : 오늘의 밥상
+        
+        let annotation1 = MKPointAnnotation()
+        annotation1.coordinate = CLLocationCoordinate2D(latitude: 37.517857, longitude: 126.886714)
+        
+        let annotation2 = MKPointAnnotation()
+        annotation2.coordinate = CLLocationCoordinate2D(latitude: 37.517746, longitude: 126.887131)
+        
+        if type == 0 { //viewDidLoad
+            mapView.addAnnotations([annotation1, annotation2])
+        } else if type == 1 {
+            mapView.removeAnnotations(mapView.annotations)
+            mapView.addAnnotations([annotation2])
+        }
+    }
+    
+    
     
     
     //Button

@@ -37,6 +37,20 @@ class ViewController: UIViewController {
         return button
     }()
     
+    let theaterSearchButton = {
+        let button = UIButton()
+        button.setTitle("주변영화관 탐색하기", for:  .normal)
+        button.setImage(UIImage(systemName: "movieclapper"), for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitleColor(UIColor.black, for: .normal)
+        var config = UIButton.Configuration.filled()
+        config.title = "주변 영화관 탐색하기"
+        config.titleAlignment = .center
+        config.imagePlacement = .leading
+        button.configuration = config
+        return button
+    }()
+    
     let emailTextField = UITextField()
     let passwordTextField = UITextField()
     let signedButton = UIButton()
@@ -83,10 +97,11 @@ class ViewController: UIViewController {
         
         
         //숙제를 위한 추가 코드
-        view.addSubViews([kakaoButton, textFieldButton])
+        view.addSubViews([kakaoButton, textFieldButton,theaterSearchButton])
         setButtonLayout()
         kakaoButton.addTarget(self, action: #selector(tappedKakaoButton(_ :)), for: .touchUpInside)
         textFieldButton.addTarget(self, action: #selector(tappedTextFieldButton(_ :)), for: .touchUpInside)
+        theaterSearchButton.addTarget(self, action: #selector(tappedtheatherButton), for: .touchUpInside)
         
     }
     
@@ -117,8 +132,6 @@ class ViewController: UIViewController {
 
 
 extension ViewController{
-   
-    
     func setButtonLayout(){
         NSLayoutConstraint.activate([
             NSLayoutConstraint(item: kakaoButton, attribute: .bottom, relatedBy: .equal, toItem: signedButton, attribute: .top, multiplier: 1, constant: -10),
@@ -128,7 +141,11 @@ extension ViewController{
             NSLayoutConstraint(item: textFieldButton, attribute: .trailing, relatedBy: .equal, toItem: signedButton, attribute: .trailing, multiplier: 1, constant: 0),
             NSLayoutConstraint(item: textFieldButton, attribute: .bottom, relatedBy: .equal, toItem: kakaoButton, attribute: .top, multiplier: 1, constant: -10),
             kakaoButton.heightAnchor.constraint(equalToConstant: 50),
-            textFieldButton.heightAnchor.constraint(equalToConstant: 50)
+            textFieldButton.heightAnchor.constraint(equalToConstant: 50),
+            theaterSearchButton.heightAnchor.constraint(equalToConstant: 50),
+            NSLayoutConstraint(item: theaterSearchButton, attribute: .bottom, relatedBy: .equal, toItem: textFieldButton, attribute: .top, multiplier: 1, constant: -10),
+            NSLayoutConstraint(item: theaterSearchButton, attribute: .leading, relatedBy: .equal, toItem: textFieldButton, attribute: .leading, multiplier: 1, constant: 0),
+            NSLayoutConstraint(item: theaterSearchButton, attribute: .trailing, relatedBy: .equal, toItem: textFieldButton, attribute: .trailing, multiplier: 1, constant: 0)
         ])
     }
     
@@ -141,7 +158,10 @@ extension ViewController{
         let vc = TextInputViewController()
         self.present(vc, animated: true)
     }
-    
+    @objc func tappedtheatherButton(_ sender: UIButton){
+        let vc = TheaterViewController()
+        self.present(vc, animated: true)
+    }
     
 }
 
