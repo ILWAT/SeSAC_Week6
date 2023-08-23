@@ -107,7 +107,8 @@ class ViewController: UIViewController {
     }
     
     @objc func tappedsignedButton(){
-        let vc = TextViewController()
+        let vc = LocationViewController()
+//        let nav = UINavigationController(rootViewController: vc)
         present(vc, animated: true)
     }
 

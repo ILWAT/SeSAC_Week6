@@ -338,6 +338,7 @@
 				DEVELOPMENT_TEAM = AYG8MBJF93;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SeSACWeek6/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "현재 날씨에 대한 정보를 가져오기 위해 위치정보가 필요해요";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -366,6 +367,7 @@
 				DEVELOPMENT_TEAM = AYG8MBJF93;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SeSACWeek6/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "현재 날씨에 대한 정보를 가져오기 위해 위치정보가 필요해요";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
