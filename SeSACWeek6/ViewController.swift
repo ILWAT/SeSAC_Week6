@@ -39,14 +39,13 @@ class ViewController: UIViewController {
     
     let theaterSearchButton = {
         let button = UIButton()
-        button.setTitle("주변영화관 탐색하기", for:  .normal)
-        button.setImage(UIImage(systemName: "movieclapper"), for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitleColor(UIColor.black, for: .normal)
         var config = UIButton.Configuration.filled()
-        config.title = "주변 영화관 탐색하기"
+        config.title = "주변 영화관 찾기"
         config.titleAlignment = .center
         config.imagePlacement = .leading
+        config.image = UIImage(systemName: "popcorn.fill")
+        config.imagePadding = 3
         button.configuration = config
         return button
     }()
@@ -57,6 +56,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.backgroundColor = .systemBackground
         
         self.view.addSubview(emailTextField)
         self.view.addSubview(passwordTextField)
@@ -122,9 +123,7 @@ class ViewController: UIViewController {
     }
     
     @objc func tappedsignedButton(){
-        let vc = LocationViewController()
-//        let nav = UINavigationController(rootViewController: vc)
-        present(vc, animated: true)
+        transition(viewController: GenericViewController.self, storyboard: "Main", style: .present)
     }
 
 }
