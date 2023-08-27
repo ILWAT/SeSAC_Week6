@@ -14,6 +14,9 @@
 		DE45D5722A972AB700F44BD1 /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE45D5712A972AB700F44BD1 /* CustomTableViewController.swift */; };
 		DE45D5742A9747FC00F44BD1 /* TheaterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE45D5732A9747FC00F44BD1 /* TheaterType.swift */; };
 		DE45D5762A9755BE00F44BD1 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE45D5752A9755BE00F44BD1 /* UIView+.swift */; };
+		DE45D5872A982AFC00F44BD1 /* CustomTableViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE45D5862A982AFC00F44BD1 /* CustomTableViewTableViewCell.swift */; };
+		DE45D5892A9840E400F44BD1 /* PosterImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE45D5882A9840E400F44BD1 /* PosterImageView.swift */; };
+		DE45D58C2A984B7B00F44BD1 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE45D58B2A984B7B00F44BD1 /* OnboardingViewController.swift */; };
 		DEC8A6132A930A3800CBA833 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC8A6122A930A3800CBA833 /* AppDelegate.swift */; };
 		DEC8A6152A930A3800CBA833 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC8A6142A930A3800CBA833 /* SceneDelegate.swift */; };
 		DEC8A6172A930A3800CBA833 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC8A6162A930A3800CBA833 /* ViewController.swift */; };
@@ -37,6 +40,9 @@
 		DE45D5712A972AB700F44BD1 /* CustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
 		DE45D5732A9747FC00F44BD1 /* TheaterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheaterType.swift; sourceTree = "<group>"; };
 		DE45D5752A9755BE00F44BD1 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		DE45D5862A982AFC00F44BD1 /* CustomTableViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewTableViewCell.swift; sourceTree = "<group>"; };
+		DE45D5882A9840E400F44BD1 /* PosterImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterImageView.swift; sourceTree = "<group>"; };
+		DE45D58B2A984B7B00F44BD1 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		DEC8A60F2A930A3800CBA833 /* SeSACWeek6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSACWeek6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEC8A6122A930A3800CBA833 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEC8A6142A930A3800CBA833 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,8 +86,18 @@
 				DE45D56B2A971D0300F44BD1 /* CustomViewController.swift */,
 				DE45D56D2A971E9500F44BD1 /* BlackRadiusTextField.swift */,
 				DE45D5712A972AB700F44BD1 /* CustomTableViewController.swift */,
+				DE45D5862A982AFC00F44BD1 /* CustomTableViewTableViewCell.swift */,
+				DE45D5882A9840E400F44BD1 /* PosterImageView.swift */,
 			);
 			path = CustomView;
+			sourceTree = "<group>";
+		};
+		DE45D58A2A984B1700F44BD1 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				DE45D58B2A984B7B00F44BD1 /* OnboardingViewController.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		DEC8A6062A930A3800CBA833 = {
@@ -103,6 +119,7 @@
 		DEC8A6112A930A3800CBA833 /* SeSACWeek6 */ = {
 			isa = PBXGroup;
 			children = (
+				DE45D58A2A984B1700F44BD1 /* Onboarding */,
 				DE45D56A2A971CEC00F44BD1 /* CustomView */,
 				DE45D5632A96F0FB00F44BD1 /* Generic */,
 				DEC8A6322A949A3F00CBA833 /* Assignment */,
@@ -226,14 +243,17 @@
 			files = (
 				DEC8A62F2A945CDA00CBA833 /* TextViewController.swift in Sources */,
 				DE45D56C2A971D0300F44BD1 /* CustomViewController.swift in Sources */,
+				DE45D5892A9840E400F44BD1 /* PosterImageView.swift in Sources */,
 				DEF24E6D2A961F5C00675DC7 /* TheaterViewController.swift in Sources */,
 				DEC8A6172A930A3800CBA833 /* ViewController.swift in Sources */,
 				DEC8A6362A94A25600CBA833 /* KaKaoTalkProfileViewController.swift in Sources */,
 				DE45D56E2A971E9500F44BD1 /* BlackRadiusTextField.swift in Sources */,
+				DE45D58C2A984B7B00F44BD1 /* OnboardingViewController.swift in Sources */,
 				DE45D5762A9755BE00F44BD1 /* UIView+.swift in Sources */,
 				DEC8A6132A930A3800CBA833 /* AppDelegate.swift in Sources */,
 				DEC8A6312A94793200CBA833 /* LocationViewController.swift in Sources */,
 				DE45D5652A96F11400F44BD1 /* GenericViewController.swift in Sources */,
+				DE45D5872A982AFC00F44BD1 /* CustomTableViewTableViewCell.swift in Sources */,
 				DE45D5692A96F15000F44BD1 /* Extension+UIViewController.swift in Sources */,
 				DEC8A6342A949A6000CBA833 /* TextInputViewController.swift in Sources */,
 				DE45D5722A972AB700F44BD1 /* CustomTableViewController.swift in Sources */,
